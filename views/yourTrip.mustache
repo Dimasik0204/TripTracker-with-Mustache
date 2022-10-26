@@ -1,0 +1,34 @@
+<html>
+    <head></head>
+    <body>
+        <h1>What's your next trip</h1>
+        <form method = "POST" action = "/yourTrip/nextTrip">
+            <input type = "text" placeHolder = "Enter your next destination" name = "destinationName" />
+            <input type = "text" placeHolder = "Enter departure date" name = "departureName" />
+            <input type = "text" placeHolder = "Enter return date" name = "returnName" />
+            <input type = "text" placeHolder = "Enter url of your image" name = "imageName" />
+            <button>Add your Trip</button>
+        </form>
+            
+           <ul>
+               <h1>Your Trips</h1>
+               {{#allTrips}}
+                  <p>{{image}}</p>
+                  <li>Trip to {{destination}}</li>
+                  <b>{{departure}} - {{return}}</b>
+            
+               {{/allTrips}}
+
+
+           </ul>
+
+
+        
+        
+        
+        
+        
+        
+        
+    </body>
+</html>
